@@ -1451,6 +1451,14 @@ public class MainActivity extends PluginManager
         }
     }
 
+    public void clearBTNClicked(View view)
+    {
+        // set service CLEAR_CODES to clear the codes
+        CommService.elm.setService(ObdProt.OBD_SVC_CLEAR_CODES);
+        // set service READ_CODES to re-read the codes
+        CommService.elm.setService(ObdProt.OBD_SVC_READ_CODES);
+    }
+
     /**
      * OnClick handler - Browse URL from content description
      *
